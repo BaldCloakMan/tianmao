@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	<!--移动端
+		适配
+			body{fongt-size:16px;}
+			字体font-size 设置rem 写成2倍 16px=.32rem
+			
+	-->
+	</head>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			font-size: 16px;
+		}
+		ul{
+			list-style: none;
+			display: flex;
+			text-align: center;
+		}
+		ul li{
+			width: 25%;
+			height: 57px;
+		}
+		#box{
+			background: skyblue;
+			width: 1.58rem;
+			height: 1.58rem;
+			font-size: .32rem;	
+		}
+		.cc{
+			width: 1.76rem;
+			height: .46rem;
+			background: saddlebrown;
+		}
+		
+	</style>
+	<body>
+		<div>
+			<ul>
+				<li>推荐</li>
+				<li>快讯</li>
+				<li>产品</li>
+				<li>商机</li>
+			</ul>
+		</div>
+		<div id="box">
+			盒子
+		</div>
+		<div class="cc"></div>
+	</body>
+	<script type="text/javascript">
+//		px
+//		rem---根据html根元素的 font-size 16px 自动改变
+//		rem适配的原理 根据屏幕宽度--动态改变html根元素的font-size
+//		375---750---
+//		1rem=100px
+//		750px	1rem=100px
+//		640ox	1rem=100px
+//		100*设备宽度/750(设计图)
+		console.log(100*window.innerWidth/750);
+//		1rem=50px	真实设备	<---> 设计图 1rem=100px
+
+
+
+		function rem (doc,win){
+			  let docEl = document.documentElement;//html 考虑以及兼容了	屏幕旋转的事件
+			//判断事件orientationchange 横屏 事件 或 resize
+			let resizeEvt='orientationchange' in window ? 'orientationchange' : 'resize';
+				let recalc=function(){
+					var clientWidth = docEl.clientWidth;//获取屏幕大小
+					if(!clientWidth){return};//未获取屏幕尺寸
+					if (clientWidth >= 750) {
+						docEl.style.fontSize='100px';
+					} else{
+//						html的font-size				100*设备宽度 / 750 
+						docEl.style.fontSize=100*(clientWidth/750)+'px';
+					}
+				};
+					if(!document.addEventListener){return;}//addEVentListener 兼容判断
+				
+				window.addEventListener(resizeEvt,recalc,false);//屏幕大小以及旋转变化自适应
+				document.addEventListener('DOMContentLoad',recalc,false);//页面初次打开自适应
+				recalc()
+		}
+
+//	rem(document,window);
+rem()
+
+
+
+
+
+
+
+		
+		
+		
+		
+		
+		
+		
+	</script>
+</html>

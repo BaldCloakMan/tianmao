@@ -1,0 +1,220 @@
+
+		@font-face {
+			  font-family: 'iconfont';  /* project id 1219595 */
+			  src: url('//at.alicdn.com/t/font_1219595_nqo0fxaa2e.eot');
+			  src: url('//at.alicdn.com/t/font_1219595_nqo0fxaa2e.eot?#iefix') format('embedded-opentype'),
+			  url('//at.alicdn.com/t/font_1219595_nqo0fxaa2e.woff2') format('woff2'),
+			  url('//at.alicdn.com/t/font_1219595_nqo0fxaa2e.woff') format('woff'),
+			  url('//at.alicdn.com/t/font_1219595_nqo0fxaa2e.ttf') format('truetype'),
+			  url('//at.alicdn.com/t/font_1219595_nqo0fxaa2e.svg#iconfont') format('svg');
+			}	
+		.iconfont{
+		    font-family:"iconfont" !important;
+		    font-size:16px;font-style:normal;
+		    -webkit-font-smoothing: antialiased;
+		    -webkit-text-stroke-width: 0.2px;
+		    -moz-osx-font-smoothing: grayscale;
+		    }
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		
+		body {
+			font-size: 16px;
+			background: #F7F7F7;
+		}
+		
+		#header {
+			width: 4.03rem;
+			height: 0.48rem;
+			background: #ff4400;
+			color: white;
+		}
+		
+		#header ul {
+			display: flex;
+			justify-content: space-between;
+			text-align: center;
+		}
+		#header li p{
+			line-height: .12rem;	
+		}		
+		#header li {
+			width: .5rem;
+			height: .48rem;
+			list-style: none;
+			font-size: .12rem;
+		}
+		#header li span{
+			line-height: .3rem;
+		}
+		#header li:nth-child(2) {
+			width: 2rem;
+		}
+		.sousuo{
+			height: .37rem;
+			font-size: .32rem;
+			overflow: hidden;
+		}
+		.sousuo div{
+			display: flex;
+			width: 1.49rem;
+			height: .17rem;
+			margin:.18rem auto 0;
+		}
+		.sousuo div a{
+			font-size: .14rem;
+			padding-right: .05rem;
+
+		}
+		.sousuo div input{
+			background: none;
+			border: none;
+			outline: none;
+			
+		}
+		.xiakaung{
+			height: .03rem;
+			border: .015rem solid #fff;
+			border-top: none;
+			
+		}
+		.swiper-container{
+			/*margin: 0;*/
+			height: 1.33rem;
+			width: 4.03rem;
+		}
+		.swiper-container img{
+			width: 100%;
+			height: 100%;
+		}
+		.content{
+			width: 4.03rem;	
+			height: 1.84rem;
+			background: white;
+			overflow: hidden;
+		}
+		.content ul{
+			list-style: none;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content:space-around;
+			margin-top: .1rem;
+
+		}
+		.content ul:nth-child(1){
+			margin-bottom: .2rem;
+		}
+		.content li{
+			height: .72rem;
+			width: .56rem;
+		}
+		.content i{
+			height: .56rem;
+			width: .56rem;
+			display: block;
+			border-radius: 50%;
+		}
+		.content img{
+			width: 100%;
+			height: 100%;
+			border-radius: 50%;
+			
+		}
+		.content p{
+			text-align: center;
+			line-height: .16rem;
+			font-size: .12rem;
+			color: #666;
+		}
+		.content{
+			margin-top: .1rem;
+			margin-bottom: .1rem;
+		}
+		.content1{
+			width: 4.03rem;	
+			height: 1.84rem;
+			background: white;
+			overflow: hidden;
+			position: relative;
+			
+		}
+		.content1 img:nth-child(1){
+			position: absolute;
+			top: 0;
+			height: 100%;
+			width: 35%;
+		}
+		.content1 img:nth-child(2){
+			position:absolute;
+			right: 0;
+			width: 65%;
+			height: 35%;
+			
+		}
+		.content1 img:nth-child(3){
+			position:absolute;
+			top: 35%;
+			left: 35%;
+			height:65%;
+			width:32.5%;
+		}
+		.content1 img:nth-child(4){
+			position:absolute;
+			bottom: 0;
+			right: 0;
+			height:65%;
+			width:32.5%;
+		}
+		.foot1{
+			
+			position: fixed;
+			bottom: 0;
+		}
+		.foot1 ul{
+			height:.52rem;
+			width: 4.03rem;
+			list-style: none;
+			display: flex;
+		}
+		
+		.foot1 li{
+			width: 20%;
+			background: white;
+			text-align: center;
+			font-size: .12rem;
+			color: #666;
+			
+		}
+		.foot1 li img{
+			margin-top: .05rem;
+			width: 0.24rem;
+			height: .24rem;
+		}
+		.foot1 li p{
+
+			height: .36rem;
+			line-height: .16rem;
+		}
+		
+		.cznav ul{
+			width: 4.03rem;
+			height: .4rem;
+			list-style: none;
+			display: flex;
+			line-height: .4rem;
+			justify-content: space-between;
+		}
+		.cznav ul li{
+			background: #eeeeee;
+			flex-grow: 1;
+			text-align: center;
+			color: #666;
+			font-size: .16rem;
+		}
+		
+		
+		
+		
+		

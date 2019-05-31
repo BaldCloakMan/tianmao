@@ -1,0 +1,40 @@
+.liebiao li{
+	position: relative;
+	display: flex;
+	width: 4.03rem;
+	height: 1rem;
+	overflow: hidden;
+	background: white;
+	margin-top: .02rem;
+}
+.liebiao img{
+	margin-top: .1rem;
+	margin-left: .1rem;
+	
+	width: .75rem;
+	height: .75rem;
+	border-radius: .03rem;
+}
+.liebiao .pname{
+	padding-top: .1rem;
+    padding-left: .1rem;
+	display: block;
+	width: 2.93rem;
+	height: .4rem;
+	font-size: .14rem;
+}
+	.liebiao .price{
+		position: absolute;
+		top: .52rem;
+   		left: .92rem;
+   		font-size: .14rem;
+}	
+.yuexiao{
+	    width: 2.93rem;
+	    position: absolute;
+	    top: 0.7rem;
+	    left: .95rem;
+	    font-size: .14rem;
+
+	}
+

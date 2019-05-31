@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		
+	</head>
+	<style type="text/css">
+		*{margin: 0; padding: 0;}
+		/*css3  flex布局  弹性盒子布局 */
+		
+		#box{
+			/*padding-left: 10px;
+			padding-right: 10px;*/
+			height: 500px;
+			background: skyblue;
+			/*父元素声明弹性布局*/
+			/*弹性布局后  子元素的 float clear vertical-middle*/
+			display: flex;   /*行内元素  diplay:inline-flex;*/
+			/*主轴       交叉轴*/
+			/* flex-direction属性决定主轴的方向 
+			 默认row   column竖轴
+			 row-reverse  column-revers 竖轴反向横轴      */
+			flex-direction:row;
+			/*justify-content属性定义了项目在主轴上的对齐方式。*/
+			/*flex-start 左对齐
+			 * flex-end  右对齐
+			 * center  居中排列
+			 * space-between：两端对齐，项目之间的间隔都相等。
+			 * space-around 每个项目两侧的间隔相等。所以，项目之间的间隔比项目与边框的间隔大一倍。
+			 * */ 
+			justify-content:space-between;
+			/*align-items属性定义项目在交叉轴上如何对齐。 */
+			/*flex-start：交叉轴的起点对齐。
+			flex-end：交叉轴的终点对齐。
+			center：交叉轴的中点对齐。
+			baseline: 项目的第一行文字的基线对齐。
+			stretch（默认值）：如果项目未设置高度或设为auto，将占满整个容器的高度。*/
+			align-items:center;
+			/*flex-wrap属性定义，如果一条轴线排不下，如何换行。*/
+			/*nowrap 默认值
+			 wrap 换行
+			 wrap-reverse 换行，第一行在下方。
+			 */
+			flex-wrap: wrap-reverse;
+			/**/
+			
+		}
+		
+		#box li{
+		/*	float: left;*/
+			list-style: none;
+			width: 100px;
+			height: 60px;
+			background: salmon;
+			border: 1px solid red;
+			text-align: center;
+			line-height: 60px;
+		}
+		#box li:nth-child(1){
+			line-height: 100px;
+		}
+		
+	</style>
+	<body>
+		<ul id="box">
+			<li>
+				111
+			</li>
+			<li>222</li>
+			<li>333</li>
+			<li>444</li>
+			<li>555</li>
+			<li>666</li>
+		</ul>
+	</body>
+	
+</html>

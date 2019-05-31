@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	</head>
+	<style type="text/css">
+		*{margin: 0;padding: 0;}
+		ul{
+			height: 500px;
+			background: skyblue;
+			display: flex;
+			/*主轴方向*/
+			flex-direction: row;
+			/*是否换行*/
+			/*flex-wrap: wrap;*/
+			/*主轴排列方式*/
+			justify-content: space-around;
+			/*交叉轴排列方式*/
+			/*align-items: center;*/
+			/*简写*/
+			/*flex-flow: row wrap;*/
+			/*align-content属性定义了很多根轴线的对齐方式.如果项目只有一根轴线,该属性不起作用*/
+			/*flex-start:与交叉轴的起点对齐*/
+			/*flex-end:与交叉周的终点对齐*/
+			/*center:与交叉周的中点对齐*/
+			/*space-between:与交叉轴两端对齐.周线之间的间隔平均分布*/
+			/*space-around:每根轴线两侧的间隔都相等.所以,轴线之间的间隔比轴线与边框的间隔大一倍*/
+			/*stretch(默认值),轴线占满整个交叉轴.*/
+			align-content:stretch;
+
+		}
+		ul li{
+			list-style: none;
+			width: 100px;
+			height: 60px;
+			line-height: 60px;
+			background: salmon;
+			border: 1px solid red;
+			text-align: center;
+			/*每个元素平分剩余空间*/
+			flex-grow: 1;
+		}
+		ul li:nth-child(1){
+			line-height: 100px;
+		}
+		ul li:nth-child(4){
+			/*order属性定义项目的排列顺序.数值越小,排列越靠前,默认值为0*/
+			order: -1;
+		}
+		/*flex-grow属性定义项目的放大比例，默认为0，即如果存在剩余空间，也不放大。*/
+		ul li:nth-child{3}{
+			/*flex-grow: 1;如果存在剩余空间 自动填满*/
+			/*flex-grow: 2   2倍剩余空间;*/
+			/*flex-grow: 2;*/	
+		}
+		/*flex-grow属性定义项目的放大比例,默认为0,即如果存在剩余空间,也不放大*/
+		ul li:nth-child(6){
+			/*默认为1 flex-shrink:2 比其他项多缩小 2 倍*/
+			flex-shrink: 2;
+		}
+		/*flex-basis属性定义了在分配多余空间之前，项目占据的主轴空间（main size）。浏览器根据这个属性，计算主轴是否有多余空间。它的默认值为auto，即项目的本来大小。*/
+		ul li:nth-child(7){
+			/*flex-basis: 350px;*/
+		}
+		ul li:nth-child(8){
+			/*flex-grow flex-shrink flex-basis*/
+			flex: 2 2 auto;
+		}
+		/*align-self*/
+		ul li:nth-child(9){
+			/*align-self属性允许单个项目有与其他项目不一样的对齐方式，可覆盖align-items属性*/
+			/*flex-start
+			 flex-end
+			 center
+			 stretch
+			 baseline  第一行文字对齐
+			 */
+			/*height: auto;*/
+			align-self:baseline;
+		}
+	</style>
+	<body>
+		<ul id="box">
+			<li>	
+				111
+			</li>
+			<li>222</li>
+			<li>333</li>
+			<li>444</li>
+			<li>555</li>
+			<li>666</li>
+			<li>777</li>
+			<li>888</li>
+			<li>999</li>
+		</ul>
+	</body>
+</html>
